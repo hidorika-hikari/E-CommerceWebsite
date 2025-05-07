@@ -202,3 +202,8 @@ nav .navPart2 ul li a{
   padding: 8px 10px;
   transition: all 0.2s ease-in-out;
 }
+
+nav .navPart2 ul li a::hover{
+  background: #f0faff;
+  color: #2bbef9;
+}
