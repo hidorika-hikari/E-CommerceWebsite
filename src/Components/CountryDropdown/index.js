@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import Button from '@mui/material/Button'
 import Dialog from '@mui/material/Dialog';
 import { useState } from 'react';
@@ -6,6 +6,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import { IoIosSearch } from 'react-icons/io';
 import { MdClose } from "react-icons/md";
 import Slide from '@mui/material/Slide';
+import { MyContext } from '../../App';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -16,6 +17,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const CountryDropdown =() => {
 
     const [isOpenModel, setisOpenModel] = useState(false)
+
+    const context = useContext(MyContext);
 
     return(
         <>
@@ -38,21 +41,13 @@ const CountryDropdown =() => {
             </div>
 
             <ul className='countryList mt-3'>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>Thailand</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
-                <li><Button onClick={()=>setisOpenModel(false)}>India</Button></li>
+            {
+                context.countryList?.length!==0 && context.countryList?.map((item,index)=>{
+                    return(
+                        <li key={index}><Button onClick={()=>setisOpenModel(false)}>{item.country}</Button></li>
+                    )
+                })
+            }
             </ul>
         </Dialog>
 

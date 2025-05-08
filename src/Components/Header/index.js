@@ -6,10 +6,14 @@ import Navigation from './Navigation';
 import Button from '@mui/material/Button'
 import { FiUser } from 'react-icons/fi';
 import { IoBagOutline } from 'react-icons/io5';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useContext } from 'react';
+import { MyContext } from '../../App';
 
 
 const Header =() => {
+
+    const context = useContext(MyContext);
+
     return(
         <>
         <div className="headerWrapper">
@@ -28,10 +32,11 @@ const Header =() => {
                     </div>
 
                     <div className='col-sm-10 d-flex align-items-center part2'> 
-                        <CountryDropdown/>
-                        {/* Header Search Start Here */}
+                        
+                    {
+                        context.countryList.length!==0 && <CountryDropdown/>
+                    } 
                         <SearchBox/>
-                        {/* Header Search Start Here */}
                     
                         
                         <div className='part3 d-flex align-items-center ml-auto'>
