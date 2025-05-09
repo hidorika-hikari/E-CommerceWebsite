@@ -22,20 +22,21 @@ const CountryDropdown =() => {
 
     const context = useContext(MyContext);
 
-    const selectCountry = (index) =>{
+    const selectCountry = (index, country) => {
         setsetlectTab(index);
         setisOpenModel(false);
+        context.setselectedCountry(country)
     }
 
     useEffect(()=>{
         setcountryList(context.countryList);
     },[])
 
-    const filterList=(e) =>{
+    const filterList=(e) => {
         const keyword = e.target.value.toLowerCase();
 
         if (keyword !== ""){
-            const list = countryList.filter((item) =>{
+            const list = countryList.filter((item) => {
                 return item.country.toLowerCase().includes(keyword);
             });
             setcountryList(list);
@@ -49,7 +50,9 @@ const CountryDropdown =() => {
         <Button className='countryDrop' onClick={()=>setisOpenModel(true)}>
             <div className='info d-flex flex-column'>
                 <span className='label'>Your Location</span>
-                <span className='name'>India</span>
+                <span className='name'>{context.selectedCountry !== "" ? context.
+                selectedCountry.length > 10 ? context.selectedCountry?.substr(0,10) + '...' : 
+                context.selectedCountry : 'Select Location'}</span>
             </div>
             <span className='ms-auto'><FaAngleDown/></span>
         </Button>
@@ -68,7 +71,7 @@ const CountryDropdown =() => {
             {
                 countryList?.length!==0 && countryList?.map((item,index)=>{
                     return(
-                        <li key={index}><Button onClick={()=>selectCountry(index)} 
+                        <li key={index}><Button onClick={()=>selectCountry(index,item.country)} 
                         className={`${selectedTab === index ? 'active' : ''}`}
                         >{item.country}</Button></li>
                     )
