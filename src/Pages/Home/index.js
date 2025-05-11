@@ -1,4 +1,4 @@
-import HomeBanner from "../../Components/HomeBanner/inedx";
+import HomeBanner from "../../Components/HomeBanner/index";
 
 const Home =() => {
     return(
