@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Navigation =() => {
 
-    const [isOpenSidebarVal, setisopenSidebarVal] = useState(true);
+    const [isOpenSidebarVal, setisopenSidebarVal] = useState(false);
     return(
         <nav>
             <div className='container'>
