@@ -3,9 +3,10 @@ import { IoIosMenu } from 'react-icons/io';
 import { FaAngleDown } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FaAngleRight } from "react-icons/fa";
 
 const Navigation =() => {
-
+    
     const [isOpenSidebarVal, setisopenSidebarVal] = useState(false);
     return(
         <nav>
@@ -20,8 +21,20 @@ const Navigation =() => {
                             </Button>
                             <div className= {`sidebarNav ${isOpenSidebarVal === true ? 'open' : ''}`}>
                                 <ul>
-                                    <li><Link to="/"><Button>Men</Button></Link></li>
-                                    <li><Link to="/"><Button>Women</Button></Link></li>
+                                    <li><Link to="/"><Button>Men<FaAngleRight className='ms-auto'/></Button></Link>
+                                        <div className='submenu shadow'>
+                                            <Link to="/"><Button>Clothing</Button></Link>
+                                            <Link to="/"><Button>Footwear</Button></Link>
+                                            <Link to="/"><Button>Watches</Button></Link>
+                                        </div>
+                                    </li>
+                                    <li><Link to="/"><Button>Women<FaAngleRight className='ms-auto'/></Button></Link>
+                                        <div className='submenu shadow'>
+                                            <Link to="/"><Button>Clothing</Button></Link>
+                                            <Link to="/"><Button>Footwear</Button></Link>
+                                            <Link to="/"><Button>Watches</Button></Link>
+                                        </div>
+                                    </li>
                                     <li><Link to="/"><Button>Beauty</Button></Link></li>
                                     <li><Link to="/"><Button>Watches</Button></Link></li>
                                     <li><Link to="/"><Button>Kids</Button></Link></li>
