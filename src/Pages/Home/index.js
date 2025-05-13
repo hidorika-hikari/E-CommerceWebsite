@@ -3,31 +3,36 @@ import Button from '@mui/material/Button'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
 import Slider from "react-slick";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
+import HomeCat from "../../Components/HomeCat";
 
 const Home =() => {
 
-    var productSliderOptions = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1
-    };
     return(
         <>
             <HomeBanner/>
+            <HomeCat/>
+
             <section className="homeProducts">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
-                            {/* <img src={} className="cursor"></img> */}
+                            <div className="banner">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
+                                {/* <img src={} className="cursor"></img> */}
+                            </div>
+
+                            <div className="banner mt-3">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
+                                {/* <img src={} className="cursor"></img> */}
+                            </div>
                         </div>
+
+                        
 
                         <div className="col-md-9 productRow">
                             <div className="d-flex align-content-center">
@@ -87,6 +92,7 @@ const Home =() => {
                                     pagination={{
                                         clickable: true,
                                     }}
+                                    slidesPerGroup={3}
                                     modules={{Navigation}}
                                     className="mySwiper">
                                     <SwiperSlide>

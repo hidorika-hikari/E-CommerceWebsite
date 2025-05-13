@@ -16,19 +16,18 @@ const ProductItem = () => {
                     <Button><TfiFullscreen/></Button>
                     <Button><CiHeart style={{ fontSize:'20px'}}/></Button>
                 </div>
-
             </div>
                                             
-            <div className="info">
-                <h4> Weather's Original Caramel Hard Candies</h4>
-                <span className="text-success d-block">In Stock</span>
-                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5}/>
+                <div className="info">
+                    <h4> Weather's Original Caramel Hard Candies</h4>
+                    <span className="text-success d-block">In Stock</span>
+                    <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5}/>
 
-                <div className="d-flex">
-                    <span className="oldPrice">20.00</span>
-                    <span className="newPrice text-danger ms-2">14.00</span>
+                    <div className="d-flex">
+                        <span className="oldPrice">20.00</span>
+                        <span className="newPrice text-danger ms-2">14.00</span>
+                    </div>
                 </div>
-            </div>
         </div>
     )
 }

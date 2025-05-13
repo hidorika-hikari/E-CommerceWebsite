@@ -461,18 +461,16 @@ nav .navPart2 ul li .submenu a button:hover{
   left: 35px !important;
 }
 
-.slick-next:before, .slick-prev:before{
-  color: #000 !important;
-  font-family: FontAwesome !important;
-  opacity: 0.8;
-}
-
 .slick-arrow.slick-next::before{
   content: "\f105" !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 .slick-arrow.slick-prev::before{
   content: "\f104" !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 .homeBannerSection{
@@ -602,10 +600,34 @@ nav .navPart2 ul li .submenu a button:hover{
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
+.product_row .swiper-button-prev{
+  left: 0px !important;
+}
+
+.product_row .swiper-button-next{
+  right: 0px !important;
+}
+
 .swiper{
-  padding-right: 1px !important;
+  padding-right: 2px !important;
+}
+
+.productItem .badge{
+  display: inline-block;
+  padding: 7px 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
 }
 
 .badge-primary{
   background: #2bbef9 !important;
+}
+
+.homeCat .swiper .item{
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  background: #fff0;
 }
