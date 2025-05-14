@@ -14,7 +14,7 @@ const Header =() => {
 
     const context = useContext(MyContext);
 
-    return(
+    return (
         <>
         <div className="headerWrapper">
             <div className="top-strip bg-blue">
@@ -31,14 +31,12 @@ const Header =() => {
                         <Link to={'/'}><img src={Logo} alt='Logo'/></Link>
                     </div>
 
-                    <div className='col-sm-10 d-flex align-items-center part2'> 
-                        
+                    <div className='col-sm-10 d-flex align-items-center part2'>                    
                     {
                         context.countryList.length!==0 && <CountryDropdown/>
                     } 
                         <SearchBox/>
-                    
-                        
+
                         <div className='part3 d-flex align-items-center ml-auto'>
                             <Button className='circle me-3'><FiUser/></Button>
                             <div className='ms-auto cartTab d-flex align-items-center'>
@@ -53,10 +51,7 @@ const Header =() => {
                 </div>
             </div>
         </header>
-
         <Navigation/>
-
-
         </div>
         </>
     )

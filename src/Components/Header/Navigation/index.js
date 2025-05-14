@@ -7,14 +7,14 @@ import { FaAngleRight } from "react-icons/fa";
 
 const Navigation =() => {
     
-    const [isOpenSidebarVal, setisopenSidebarVal] = useState(false);
+    const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(false);
     return(
         <nav>
             <div className='container'>
                 <div className='row'>
                     <div className='col-sm-2 navPart1'>
                         <div className='catWrapper'>
-                            <Button className='allCartTab align-items-center' onClick={() => setisopenSidebarVal(!isOpenSidebarVal)}>
+                            <Button className='allCartTab align-items-center' onClick={() => setIsOpenSidebarVal(!isOpenSidebarVal)}>
                                 <span className='icon1 me-2'><IoIosMenu/></span>
                                 <span className='text'>ALL CATEGORIES</span>
                                 <span className='icon2 ms-2'><FaAngleDown/></span>

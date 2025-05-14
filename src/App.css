@@ -495,9 +495,10 @@ nav .navPart2 ul li .submenu a button:hover{
   overflow: hidden;
 }
 
-.productRow .hd{
+.hd{
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .viewAllBtn{
@@ -632,9 +633,56 @@ nav .navPart2 ul li .submenu a button:hover{
   background: #2bbef9 !important;
 }
 
+.homeCat{
+  padding: 35px 0px;
+}
+.homeCat .swiper{
+  overflow: inherit !important;
+}
+
 .homeCat .swiper .item{
   padding: 15px;
   width: 100%;
   height: auto;
-  background: #fff0;
+  background: #feefea;
+  border-radius: 10px;
+}
+
+.homeCat .swiper .item img{
+  width: 80%;
+}
+
+.homeCat .swiper-button-next,
+.homeCat .swiper-button-prev {
+  top: -30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.homeCat .swiper-button-prev{
+  right: 68px !important;
+  left: inherit !important;
+}
+
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
+  font-size: 12px !important;
+  font-weight: 900 !important;
+}
+
+.product_row .swiper-button-next,
+.product_row .swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+
+.product_row .swiper-button-prev::after, .product_row .swiper-button-next::after{
+  font-size: 16px !important;
+  font-weight: 900 !important;
 }

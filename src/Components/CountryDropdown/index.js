@@ -45,7 +45,7 @@ const CountryDropdown =() => {
         }
     }
 
-    return(
+    return (
         <>
         <Button className='countryDrop' onClick={()=>setisOpenModel(true)}>
             <div className='info d-flex flex-column'>
@@ -79,7 +79,6 @@ const CountryDropdown =() => {
             }
             </ul>
         </Dialog>
-
         </>
     )
 }

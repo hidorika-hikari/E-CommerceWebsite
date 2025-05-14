@@ -11,7 +11,7 @@ const HomeBanner =() => {
         slidesToScroll: 1,
         arrows:true,
         autoPlay:true
-      };
+    };
     
     return(
         <>

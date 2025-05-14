@@ -12,7 +12,7 @@ import HomeCat from "../../Components/HomeCat";
 
 const Home =() => {
 
-    return(
+    return (
         <>
             <HomeBanner/>
             <HomeCat/>
@@ -48,10 +48,11 @@ const Home =() => {
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={10}
+                                    navigation={true}
                                     pagination={{
                                         clickable: true,
                                     }}
-                                    modules={{Navigation}}
+                                    modules={[Navigation]}
                                     className="mySwiper">
                                     <SwiperSlide>
                                         <ProductItem/>
@@ -89,11 +90,12 @@ const Home =() => {
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={10}
+                                    navigation={true}
                                     pagination={{
                                         clickable: true,
                                     }}
                                     slidesPerGroup={3}
-                                    modules={{Navigation}}
+                                    modules={[Navigation]}
                                     className="mySwiper">
                                     <SwiperSlide>
                                         <ProductItem/>
