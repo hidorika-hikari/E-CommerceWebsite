@@ -21,14 +21,16 @@ const Home =() => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="banner">
-                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
-                                {/* <img src={} className="cursor"></img> */}
-                            </div>
+                            <div className="sticky">
+                                <div className="banner">
+                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
+                                    {/* <img src={} className="cursor"></img> */}
+                                </div>
 
-                            <div className="banner mt-3">
-                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
-                                {/* <img src={} className="cursor"></img> */}
+                                <div className="banner mt-3">
+                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
+                                    {/* <img src={} className="cursor"></img> */}
+                                </div>
                             </div>
                         </div>
 
@@ -48,6 +50,7 @@ const Home =() => {
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={10}
+                                    slidesPerGroup={3}
                                     navigation={true}
                                     pagination={{
                                         clickable: true,
@@ -86,38 +89,27 @@ const Home =() => {
                                 <Button className="viewAllBtn ms-auto">View All<IoIosArrowRoundForward /></Button>
                             </div>
 
-                            <div className="product_row w-100 mt-4">
-                                <Swiper
-                                    slidesPerView={4}
-                                    spaceBetween={10}
-                                    navigation={true}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
-                                    slidesPerGroup={3}
-                                    modules={[Navigation]}
-                                    className="mySwiper">
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
+                            <div className="product_row productRow2 w-100 mt-4 d-flex">
+                                <ProductItem/>
+                                <ProductItem/>
+                                <ProductItem/>
+                                <ProductItem/>
+                                <ProductItem/>
+                                <ProductItem/>
+                                <ProductItem/>
+                                <ProductItem/>
+                            </div>
 
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
+                            <div className="d-flex mt-4 mb-5 bannerSec">
+                                <div className="banner mt-4">
+                                    <img src="https://vos.line-scdn.net/strapi-cluster-instance-bucket-83/My_Shop_c_14_02_5cf1bae7bd.jpeg" 
+                                    className="cursor w-100"/>
+                                </div>
 
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                </Swiper>
-                                
+                                <div className="banner mt-4">
+                                    <img src="https://vos.line-scdn.net/strapi-cluster-instance-bucket-83/My_Shop_c_14_02_5cf1bae7bd.jpeg" 
+                                    className="cursor w-100"/>
+                                </div>
                             </div>
                         </div>
                     </div>
