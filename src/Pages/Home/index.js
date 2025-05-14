@@ -1,6 +1,7 @@
 import HomeBanner from "../../Components/HomeBanner/index";
 import Button from '@mui/material/Button'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoMailOutline } from "react-icons/io5";
 import React from "react";
 import Slider from "react-slick";
 import 'swiper/css';
@@ -9,6 +10,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
+
+import newsLetterImg from '../../assets/coupons.png'
 
 const Home =() => {
 
@@ -111,6 +114,27 @@ const Home =() => {
                                     className="cursor w-100"/>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p className="text-white mb-1">$20 discount for your first order</p>
+                            <h3 className="text-white">Join our newsletter and get...</h3>
+                            <p className="text-light">Join our email subscription now to get
+                            updates on <br/> promotions and coupons.</p>  
+                            <form>
+                                <IoMailOutline />
+                                <input type="text" placeholder="Your email address"/>
+                                <Button>Subscription</Button>
+                            </form>
+                        </div>
+                        <div className="col-md-6">
+                            <img src={newsLetterImg}/>
                         </div>
                     </div>
                 </div>
