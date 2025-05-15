@@ -17,7 +17,7 @@ const ProductItem = () => {
                     <Button><CiHeart style={{ fontSize:'20px'}}/></Button>
                 </div>
             </div>
-                                            
+                
                 <div className="info">
                     <h4> Weather's Original Caramel Hard Candies</h4>
                     <span className="text-success d-block">In Stock</span>

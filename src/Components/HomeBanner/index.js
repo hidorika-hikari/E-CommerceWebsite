@@ -1,38 +1,39 @@
 import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 
-const HomeBanner =() => {
-    
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows:true,
-        autoPlay:true
-    };
-    
-    return(
-        <>
-        <div className="homeBannerSection">
-            <Slider {...settings}>
-                <div className="item">
-                    <img src="https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg" className="w-100"/>
-                </div>
-                <div className="item">
-                    <img src="https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg" className="w-100"/>
-                </div>
-                <div className="item">
-                    <img src="https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg" className="w-100"/>
-                </div>
-                <div className="item">
-                    <img src="https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg" className="w-100"/>
-                </div>
-            </Slider>
-        </div>
-        </>
-    )
-}
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const HomeBanner = () => {
+  const images = [
+    "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg",
+    "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg",
+    "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg",
+    "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg"
+  ];
+
+  return (
+    <div className="homeBannerSection">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={8}
+        navigation={true}
+        slidesPerGroup={1}
+        pagination={{ clickable: true }}
+        modules={[Navigation, Pagination]}
+        className="mySwiper"
+      >
+        {images.map((src, index) => (
+          <SwiperSlide key={index}>
+            <img src={src} alt={`Slide ${index}`} className="w-100" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
 
 export default HomeBanner;
