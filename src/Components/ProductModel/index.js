@@ -10,7 +10,7 @@ import 'react-inner-image-zoom/lib/styles.min.css';
 const ProductModel = (props) => {
 
     const zoomSliderBig = useRef();
-    const ZoomSlider = useRef();
+    const zoomSlider = useRef();
 
     var setting2 = {
         dots: false,
@@ -20,6 +20,16 @@ const ProductModel = (props) => {
         slidesToScroll: 1,
         fade: false,
         arrows: false,
+    };
+
+    var setting = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: false,
+        arrows: true,
     };
 
     return (
@@ -50,8 +60,24 @@ const ProductModel = (props) => {
                                     src={`https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-768x691.jpg`}/>
                                 </div>
                             </Slider>
-
                         </div>
+                        <Slider {...setting} className='zoomSlider' ref={zoomSlider}>
+                            <div className='item'>
+                                <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-768x691.jpg' className='w-100'/>
+                            </div>
+
+                            <div className='item'>
+                                <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-768x691.jpg' className='w-100'/>
+                            </div>
+
+                            <div className='item'>
+                                <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-768x691.jpg' className='w-100'/>
+                            </div>
+
+                            <div className='item'>
+                                <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-768x691.jpg' className='w-100'/>
+                            </div>
+                        </Slider>
                     </div>
                     <div className='col-md-7'>
 
