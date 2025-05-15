@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import Button from '@mui/material/Button'
+import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import Slide from '@mui/material/Slide';
 import { useState } from 'react';
