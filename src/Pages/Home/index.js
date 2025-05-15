@@ -1,11 +1,11 @@
+import 'swiper/css';
+import 'swiper/css/navigation';
 import HomeBanner from "../../Components/HomeBanner/index";
 import Button from '@mui/material/Button'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoMailOutline } from "react-icons/io5";
 import React from "react";
 import Slider from "react-slick";
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";

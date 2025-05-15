@@ -1,7 +1,7 @@
 import { TfiFullscreen } from "react-icons/tfi";
+import { CiHeart } from "react-icons/ci";
 import Rating from "@mui/material/Rating";
 import Button from '@mui/material/Button'
-import { CiHeart } from "react-icons/ci";
 
 const ProductItem = () => {
     return (

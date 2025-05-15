@@ -2,6 +2,9 @@ import { GiSkirt } from "react-icons/gi";
 import { TbTruckDelivery } from "react-icons/tb";
 import { BiSolidDiscount } from "react-icons/bi";
 import { CiBadgeDollar } from "react-icons/ci";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -89,7 +92,20 @@ const Footer = () => {
                     </div>
                 </div>
 
-                
+                <div className="copyright mt-3 pt-3 pb-3 d-flex">
+                    <p className="mb-0">copyright 2025. All rights reserved</p>
+                    <ul className="list list-inline ms-auto mb-0">
+                        <li className="list-inline-item">
+                            <Link to ="#"><FaFacebookF /></Link>
+                        </li>
+                        <li className="list-inline-item">
+                            <Link to ="#"><FaTwitter /></Link>
+                        </li>
+                        <li className="list-inline-item">
+                            <Link to ="#"><FaInstagram /></Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </footer>
     )

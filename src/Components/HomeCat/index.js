@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 

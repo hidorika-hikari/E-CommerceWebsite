@@ -830,3 +830,26 @@ footer .linkWrap ul li a{
   font-size: 13px;
   text-decoration: none;
 }
+
+footer .copyright ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .copyright ul li a svg{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+footer .copyright ul li a:hover{
+  background: #2bbef9 !important;
+}
+
+footer .copyright ul li a:hover svg{
+  color: #fff !important;
+}

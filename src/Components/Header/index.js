@@ -31,13 +31,13 @@ const Header =() => {
                         <Link to={'/'}><img src={Logo} alt='Logo'/></Link>
                     </div>
 
-                    <div className='col-sm-10 d-flex align-items-center part2'>                    
+                    <div className='col-sm-10 d-flex align-items-center part2'>
                     {
                         context.countryList.length!==0 && <CountryDropdown/>
                     } 
                         <SearchBox/>
 
-                        <div className='part3 d-flex align-items-center ml-auto'>
+                        <div className='part3 d-flex align-items-center'>
                             <Button className='circle me-3'><FiUser/></Button>
                             <div className='ms-auto cartTab d-flex align-items-center'>
                                 <span className='price'>3.29$</span>
