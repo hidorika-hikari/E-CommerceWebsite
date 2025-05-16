@@ -2,26 +2,26 @@ import { TfiFullscreen } from "react-icons/tfi";
 import { CiHeart } from "react-icons/ci";
 import Rating from "@mui/material/Rating";
 import Button from '@mui/material/Button'
-import ProductModel from "../ProductModel";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { MyContext } from "../../App";
 
 const ProductItem = () => {
 
-    const [isOpenProductModel,setIsOpenProductModel] = useState(false);
+    const context = useContext(MyContext);
 
     const viewProductDetails = (id) => {
-        setIsOpenProductModel(true);
+        context.setIsOpenProductModel(true);
     }
 
     const closeProductModel = () => {
-        setIsOpenProductModel(false);
+        context.setIsOpenProductModel(false);
     }
 
     return (
         <>
             <div className="item productItem">
                 <div className="imgWrapper">
-                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" 
+                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
                     className="w-100"/>
 
                     <span className="badge badge-primary">28%</span>
@@ -43,11 +43,6 @@ const ProductItem = () => {
                         </div>
                     </div>
             </div>
-            {
-                isOpenProductModel === true && <ProductModel closeProductModel={closeProductModel}/>
-            }
-
-            
         </>
     )
 }

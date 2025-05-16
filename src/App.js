@@ -6,14 +6,15 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios';
+import ProductModel from "./Components/ProductModel";
 
 const MyContext = createContext();
 
 function App() {
 
-
   const [countryList,setCountryList] = useState([]);
   const [selectedCountry,setselectedCountry] = useState('');
+  const [isOpenProductModel,setIsOpenProductModel] = useState(false);
 
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/");
@@ -29,7 +30,9 @@ function App() {
   const values = {
     countryList,
     setselectedCountry,
-    selectedCountry
+    selectedCountry,
+    isOpenProductModel,
+    setIsOpenProductModel
   }
   return (  
     <BrowserRouter>
@@ -39,6 +42,9 @@ function App() {
         <Route path="/" exact={true} element={<Home/>}/>
       </Routes>
       <Footer/>
+      {
+        isOpenProductModel === true && <ProductModel/>
+      }
       </MyContext.Provider>
     </BrowserRouter>
   );
