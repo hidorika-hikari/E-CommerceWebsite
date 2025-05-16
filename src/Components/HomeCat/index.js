@@ -32,7 +32,6 @@ const HomeCat = () => {
                                 <SwiperSlide>
                                     <div className="item text-center cursor" style={{background:item}}>
                                         <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"/>
-
                                         <h6>Red Apple</h6>
                                     </div>
                                 </SwiperSlide>
@@ -40,7 +39,6 @@ const HomeCat = () => {
                         })
                     }
                 </Swiper>
-
             </div>
         </section>
     )

@@ -15,7 +15,7 @@ body {
 }
 
 .bg-blue{
-  background: #233a95;
+  background: #7d4aae;
 }
 
 @media (min-width: 1300px) {
@@ -333,7 +333,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
 }
 
 nav .allCartTab{
-  background: #2bbef9;
+  background: #7a55c1;
   padding: 10px 15px !important;
   border-radius: 30px !important;
 }
@@ -594,7 +594,7 @@ nav .navPart2 ul li .submenu a button:hover{
 }
 
 .productItem .actions button:hover{
-  background: #233a95 !important;
+  background: #7a55c1 !important;
 }
 
 .productItem .actions button:hover svg{
@@ -729,10 +729,10 @@ nav .navPart2 ul li .submenu a button:hover{
 .newsLetterSection{
   width: 100%;
   height: auto;
-  background: #233a95;
+  background-image: linear-gradient(to bottom right, #4a2888, #7a55c1);
   position: relative;
   overflow: hidden;
-  padding: 70px 0px;
+  padding: 60px 0px;
 }
 
 .newsLetterSection .col-md-6{
@@ -745,7 +745,7 @@ nav .navPart2 ul li .submenu a button:hover{
 }
 
 .newsLetterSection h3{
-  font-size: 35px;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -791,7 +791,7 @@ nav .navPart2 ul li .submenu a button:hover{
   position: absolute;
   top: 6px;
   right: 7px;
-  background: #233a95 !important;
+  background: #6d4aae !important;
   font-size: 14px !important;
   padding: 12px 25px !important;
   color: #fff !important;
@@ -964,7 +964,7 @@ footer .copyright ul li a:hover svg{
 }
 
 .btn-blue{
-  background: #233a95 !important;
+  background: #7d4aae !important;
   color: #fff !important;
   text-transform: capitalize !important;
 }

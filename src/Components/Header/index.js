@@ -34,9 +34,8 @@ const Header =() => {
                     <div className='col-sm-10 d-flex align-items-center part2'>
                     {
                         context.countryList.length!==0 && <CountryDropdown/>
-                    } 
+                    }
                         <SearchBox/>
-
                         <div className='part3 d-flex align-items-center'>
                             <Button className='circle me-3'><FiUser/></Button>
                             <div className='ms-auto cartTab d-flex align-items-center'>
