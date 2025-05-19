@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route , Routes} from "react-router-dom";
 import Home from "./Pages/Home";
 import Listing from "./Pages/Listing";
+import ProductDetails from "./Pages/ProductDetails";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { createContext, useEffect, useState } from "react";
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path="/" exact={true} element={<Home/>}/>
         <Route path="/cat/:id" exact={true} element={<Listing/>}/>
+        <Route path="/product/:id" exact={true} element={<ProductDetails/>}/>
       </Routes>
       <Footer/>
       {
