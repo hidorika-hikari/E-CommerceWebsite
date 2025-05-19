@@ -5,7 +5,7 @@ import Button from '@mui/material/Button'
 import { useContext, useState } from "react";
 import { MyContext } from "../../App";
 
-const ProductItem = () => {
+const ProductItem = (props) => {
 
     const context = useContext(MyContext);
 
@@ -19,7 +19,7 @@ const ProductItem = () => {
 
     return (
         <>
-            <div className="item productItem">
+            <div className={`productItem ${props.itemView}`}>
                 <div className="imgWrapper">
                     <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
                     className="w-100"/>

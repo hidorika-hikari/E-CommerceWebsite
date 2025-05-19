@@ -1084,12 +1084,6 @@ button{
   height: 20px !important;
 }
 
-.product_Listing_Page .productListing .content_right{
-  width: 80%;
-  flex: 0 0 80%;
-  padding-left: 50px;
-}
-
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, 
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
     color: #6d4aae;
@@ -1124,6 +1118,12 @@ button{
   background: #f7f8fd;
 }
 
+.product_Listing_Page .productListing .content_right {
+  width: 76% !important;
+  flex: 0 0 76% !important;
+  padding-left: 50px !important;
+}
+
 .product_Listing_Page .productListing .content_right .showBy{
   width: 100%;
   height: auto;
@@ -1145,6 +1145,10 @@ button{
   opacity: 0.5;
 }
 
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button.act{
+  opacity: 1 !important;
+}
+
 .view-toggle:hover {
   opacity: 1;
 }
@@ -1158,4 +1162,36 @@ button{
   color: #000;
   opacity: 0.7;
   margin-left: 5px;
+}
+
+.showByFilter button.act svg{
+  opacity: 1 !important;
+}
+
+.productListing{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.productListing .productItem.four{
+  width: 23%;
+}
+
+.productListing .productItem.three{
+  width: 31.5%;
+}
+
+.productListing .productItem.two{
+  width: 48%;
+}
+
+.productListing .productItem.one{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.productListing .productItem.one .img_rapper{
+  width: 25%;
 }
