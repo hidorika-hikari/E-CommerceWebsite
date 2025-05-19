@@ -1032,7 +1032,7 @@ button{
 }
 
 .product_Listing_Page{
-  padding: 35px 0px;
+  padding: 45px 0px;
 }
 
 .product_Listing_Page .productListing{
@@ -1061,6 +1061,10 @@ button{
   overflow-x: hidden;
 }
 
+.product_Listing_Page .productListing .sidebar .scroll ul {
+  margin-bottom: 0px;
+}
+
 .product_Listing_Page .productListing .sidebar .scroll ul li{
   list-style: none;
   margin-bottom: 10px;
@@ -1083,9 +1087,44 @@ button{
 .product_Listing_Page .productListing .content_right{
   width: 80%;
   flex: 0 0 80%;
+  padding-left: 50px;
 }
 
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, 
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
     color: #6d4aae;
+}
+
+.css-13vpke-MuiSlider-root {
+  color: #28a745 !important; /* สีเขียว */ 
+  height: 6px !important;
+  padding: 15px 0!important;
+}
+
+.css-1xcmt9q-MuiSlider-thumb {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #fff !important;
+  border: 2px solid #28a745 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.css-xvk2i-MuiSlider-track {
+  height: 6px !important;
+  border-radius: 3px !important;
+}
+
+.css-r64h58-MuiSlider-rail {
+  height: 6px !important;
+  border-radius: 3px !important;
+  opacity: 0.3 !important;
+  background-color: #ccc !important;
+}
+
+.css-1xcmt9q-MuiSlider-thumb {
+  background: #28a745 !important;
+  color: white !important;
+  font-size: 12px !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
 }
