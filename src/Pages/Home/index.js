@@ -2,16 +2,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import HomeBanner from "../../Components/HomeBanner/index";
 import Button from '@mui/material/Button'
-import { IoIosArrowRoundForward } from "react-icons/io";
-import { IoMailOutline } from "react-icons/io5";
-import React from "react";
-import Slider from "react-slick";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
-
 import newsLetterImg from '../../assets/coupons.png'
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoMailOutline } from "react-icons/io5";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
 const Home =() => {
 
@@ -31,7 +28,7 @@ const Home =() => {
                                 </div>
 
                                 <div className="banner mt-3">
-                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor"></img>
+                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-banner-04.jpg" className="cursor"></img>
                                     {/* <img src={} className="cursor"></img> */}
                                 </div>
                             </div>
@@ -105,12 +102,12 @@ const Home =() => {
 
                             <div className="d-flex mt-4 mb-5 bannerSec">
                                 <div className="banner mt-4">
-                                    <img src="https://vos.line-scdn.net/strapi-cluster-instance-bucket-83/My_Shop_c_14_02_5cf1bae7bd.jpeg" 
+                                    <img src="https://vos.line-scdn.net/strapi-cluster-instance-bucket-83/My_Shop_c_14_02_5cf1bae7bd.jpeg"
                                     className="cursor w-100"/>
                                 </div>
 
                                 <div className="banner mt-4">
-                                    <img src="https://vos.line-scdn.net/strapi-cluster-instance-bucket-83/My_Shop_c_14_02_5cf1bae7bd.jpeg" 
+                                    <img src="https://vos.line-scdn.net/strapi-cluster-instance-bucket-83/My_Shop_c_14_02_5cf1bae7bd.jpeg"
                                     className="cursor w-100"/>
                                 </div>
                             </div>

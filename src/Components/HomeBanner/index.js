@@ -7,10 +7,9 @@ import "swiper/css/pagination";
 
 const HomeBanner = () => {
     const images = [
-        "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg",
-        "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg",
-        "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg",
-        "https://dgbvgo13heod7.cloudfront.net/2025/banners/wk19/2061-16x9-women-startpage-wk19.jpg"
+        "https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg",
+        "https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-2.jpg",
+        "https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-3.jpg",
     ];
 
     return (

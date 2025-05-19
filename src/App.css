@@ -333,7 +333,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
 }
 
 nav .allCartTab{
-  background: #7a55c1;
+  background: #2bbef9;
   padding: 10px 15px !important;
   border-radius: 30px !important;
 }
@@ -1096,35 +1096,66 @@ button{
 }
 
 .css-13vpke-MuiSlider-root {
-  color: #28a745 !important; /* สีเขียว */ 
+  color: #000 !important;
   height: 6px !important;
   padding: 15px 0!important;
 }
 
 .css-1xcmt9q-MuiSlider-thumb {
-  width: 20px !important;
-  height: 20px !important;
-  background-color: #fff !important;
-  border: 2px solid #28a745 !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #000 !important;
 }
 
 .css-xvk2i-MuiSlider-track {
-  height: 6px !important;
-  border-radius: 3px !important;
+  height: 0px !important;
+  background-color: #000 !important;
 }
 
 .css-r64h58-MuiSlider-rail {
-  height: 6px !important;
-  border-radius: 3px !important;
-  opacity: 0.3 !important;
-  background-color: #ccc !important;
+  height: 3px !important;
+  background-color: #000 !important;
+  opacity: 1 !important;
 }
 
-.css-1xcmt9q-MuiSlider-thumb {
-  background: #28a745 !important;
-  color: white !important;
-  font-size: 12px !important;
-  border-radius: 4px !important;
-  padding: 4px 8px !important;
+.showBy{
+  width: 100%;
+  height: 50px;
+  background: #f7f8fd;
+}
+
+.product_Listing_Page .productListing .content_right .showBy{
+  width: 100%;
+  height: auto;
+  background: #f7f8fd;
+  padding: 15px 25px;
+}
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button{
+  min-width: 35px !important;
+  height: 35px !important;
+  width: 35px !important;
+  border-radius: 50% !important;
+  color: #000 !important;
+}
+
+.view-toggle {
+  color: #000 !important;
+  font-size: 18px !important;
+  opacity: 0.5;
+}
+
+.view-toggle:hover {
+  opacity: 1;
+}
+
+.showByFilter button{
+  min-width: auto !important;
+  color: #000;
+}
+
+.showByFilter button svg{
+  color: #000;
+  opacity: 0.7;
+  margin-left: 5px;
 }
