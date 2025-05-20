@@ -37,16 +37,16 @@ const Listing = () => {
                             <div className='showBy mt-3 mb-3 d-flex align-items-center'>
                                 <div className='d-flex align-items-center btnWrapper'>
                                     <Button onClick={() => setProductView('one')}
-                                    className={`view-toggle ${productView === 'one' && 'act'}`}
+                                    className={`view-toggle ${productView == 'one' && 'act'}`}
                                     ><IoIosMenu /></Button>
-                                    <Button onClick={()=>setProductView('two')} 
-                                    className={`view-toggle ${productView === 'two' && 'act' }`}
+                                    <Button onClick={()=>setProductView('two')}
+                                    className={`view-toggle ${productView == 'two' && 'act' }`}
                                     ><HiViewGrid/></Button>
-                                    <Button onClick={()=>setProductView('three')} 
-                                    className={`view-toggle ${productView === 'three'&& 'act' }`}
+                                    <Button onClick={()=>setProductView('three')}
+                                    className={`view-toggle ${productView == 'three'&& 'act' }`}
                                     ><CgMenuGridR/></Button>
-                                    <Button onClick={()=>setProductView('four')} 
-                                    className={`view-toggle ${productView === 'four' && 'act'}`}
+                                    <Button onClick={()=>setProductView('four')}
+                                    className={`view-toggle ${productView == 'four' && 'act'}`}
                                     ><TfiLayoutGrid4Alt/></Button>
                                 </div>
 

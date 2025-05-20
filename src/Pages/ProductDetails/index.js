@@ -1,4 +1,4 @@
-import { ListItem, Rating } from "@mui/material";
+import {  Rating } from "@mui/material";
 import ProductZoom from "../../Components/ProductZoom";
 import QuantityBox from "../../Components/QuantityDrop";
 import Button from '@mui/material/Button';
@@ -58,19 +58,19 @@ const ProductDetails = () => {
                                 <span>Size / Weight:</span>
                                 <ul className="list list-inline mb-0 ps-4">
                                     <li className="list-inline-item">
-                                    <a className={`tag ${activeSize === 0 ? 'active' : ''}`} onClick={() => isActive(0)}>50g</a>
+                                    <a className={`tag ${activeSize == 0 ? 'active' : ''}`} onClick={() => isActive(0)}>50g</a>
                                     </li>
                                     <li className="list-inline-item">
-                                    <a className={`tag ${activeSize === 1 ? 'active' : ''}`} onClick={() => isActive(1)}>100g</a>
+                                    <a className={`tag ${activeSize == 1 ? 'active' : ''}`} onClick={() => isActive(1)}>100g</a>
                                     </li>
                                     <li className="list-inline-item">
-                                    <a className={`tag ${activeSize === 2 ? 'active' : ''}`} onClick={() => isActive(2)}>200g</a>
+                                    <a className={`tag ${activeSize == 2 ? 'active' : ''}`} onClick={() => isActive(2)}>200g</a>
                                     </li>
                                     <li className="list-inline-item">
-                                    <a className={`tag ${activeSize === 3 ? 'active' : ''}`} onClick={() => isActive(3)}>300g</a>
+                                    <a className={`tag ${activeSize == 3 ? 'active' : ''}`} onClick={() => isActive(3)}>300g</a>
                                     </li>
                                     <li className="list-inline-item">
-                                    <a className={`tag ${activeSize === 4 ? 'active' : ''}`} onClick={() => isActive(4)}>500g</a>
+                                    <a className={`tag ${activeSize == 4 ? 'active' : ''}`} onClick={() => isActive(4)}>500g</a>
                                     </li>
                                 </ul>
                             </div>
@@ -97,19 +97,19 @@ const ProductDetails = () => {
                         <div className="customTabs">
                             <ul className="list list-inline">
                                 <li className="list-inline-item">
-                                    <Button className={`tag ${activeTabs === 0 && 'active'}`}
+                                    <Button className={`tag ${activeTabs == 0 && 'active'}`}
                                     onClick={() => {
                                         setActiveTabs(0)
                                     }}>Description</Button>
                                 </li>
                                 <li className="list-inline-item">
-                                    <Button className={`tag ${activeTabs === 1 && 'active'}`}
+                                    <Button className={`tag ${activeTabs == 1 && 'active'}`}
                                     onClick={() => {
                                         setActiveTabs(1)
                                     }}>Additional Info</Button>
                                 </li>
                                 <li className="list-inline-item">
-                                    <Button className={`tag ${activeTabs === 2 && 'active'}`}
+                                    <Button className={`tag ${activeTabs == 2 && 'active'}`}
                                     onClick={() => {
                                         setActiveTabs(2)
                                     }}>Review(3)</Button>
@@ -215,7 +215,7 @@ const ProductDetails = () => {
                             }
 
                             {
-                                activeTabs === 2 &&
+                                activeTabs == 2 &&
                                 <div className="tabContents">
                                     <div className="row">
                                         <div className="col-md-8">
@@ -257,7 +257,7 @@ const ProductDetails = () => {
                                                     <div className="row">
                                                         <div className="col-md-6">
                                                             <div className="form-group">
-                                                                <input type="text" className="form-control" placeholder="Name" name="userName"/>                        
+                                                                <input type="text" className="form-control" placeholder="Name" name="userName"/>
                                                             </div>
                                                         </div>
                                                     

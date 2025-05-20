@@ -563,18 +563,18 @@ nav .navPart2 ul li .submenu a button:hover{
   font-size: 20px;
 }
 
-.productItem .actions{
+.productItem .actions {
   position: absolute;
   top: 20px;
-  right: -100%;
+  right: 10px;
   z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: all 0.5s ease-in-out;
+  opacity: 0;
 }
 
-.productItem .actions button{
+.productItem .actions button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -584,40 +584,31 @@ nav .navPart2 ul li .submenu a button:hover{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50% !important;
   background: #fff !important;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 12%),0 1px 2px rgb(0 0 0 / 24%) !important;
-  transition: all 0.0s !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
 }
 
-.productItem .actions button svg{
+.productItem .actions button svg {
   color: #000 !important;
   opacity: 0.8;
   pointer-events: none;
   font-size: 15px;
 }
 
-.productItem .actions button:hover{
+.productItem .actions button:hover {
   background: #7a55c1 !important;
 }
 
-.productItem .actions button:hover svg{
+.productItem .actions button:hover svg {
   color: #fff !important;
 }
 
-.productItem .imgWrapper{
+.productItem .imgWrapper {
   overflow: hidden;
+  position: relative;
 }
 
-.productItem .imgWrapper img{
-  transition: all 0.3s ease-in-out;
-}
-
-.productItem .imgWrapper:hover .actions{
+.productItem .imgWrapper:hover .actions {
   opacity: 1;
-  right: 10px;
-}
-
-.productItem .imgWrapper:hover img{
-  transform: scale(1.1);
 }
 
 .product_row{
@@ -924,9 +915,15 @@ footer .copyright ul li a:hover svg{
   z-index: 100;
 }
 
-.zoomSliderBig{
+.slick-list{
+   border: 1px solid #000; 
+   border-radius: 20px;
+}
+
+.zoomSliderBig {
   width: 100% !important;
 }
+
 
 .zoomSlider{
   padding-top: 30px;

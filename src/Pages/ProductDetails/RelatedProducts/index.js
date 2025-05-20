@@ -8,7 +8,7 @@ import ProductItem from "../../../Components/ProductItem";
 const RelatedProducts = (props) => {
     return (
         <>
-            <div className="d-flex align-items-center mt-3">
+            <div className="d-flex align-items-center mt-3 mb-3">
                 <div className="info w-75">
                     <h3 className="mb-0 hd">{props.title}</h3>
                 </div>
@@ -16,7 +16,7 @@ const RelatedProducts = (props) => {
 
             <div className="product_row w-100 mt-0">
                 <Swiper
-                    slidesPerView={4}
+                    slidesPerView={6}
                     spaceBetween={10}
                     slidesPerGroup={3}
                     navigation={true}
@@ -37,6 +37,14 @@ const RelatedProducts = (props) => {
                         <ProductItem/>
                     </SwiperSlide>
 
+                    <SwiperSlide>
+                        <ProductItem/>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <ProductItem/>
+                    </SwiperSlide>
+                    
                     <SwiperSlide>
                         <ProductItem/>
                     </SwiperSlide>

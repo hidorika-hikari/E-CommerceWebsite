@@ -8,7 +8,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
-
 import newsLetterImg from '../../assets/coupons.png'
 
 const Home =() => {
@@ -126,7 +125,7 @@ const Home =() => {
                             <p className="text-white mb-1">$20 discount for your first order</p>
                             <h3 className="text-white">Join our newsletter and get...</h3>
                             <p className="text-light">Join our email subscription now to get
-                            updates on <br/> promotions and coupons.</p>  
+                            updates on <br/> promotions and coupons.</p> 
                             <form>
                                 <IoMailOutline />
                                 <input type="text" placeholder="Your email address"/>

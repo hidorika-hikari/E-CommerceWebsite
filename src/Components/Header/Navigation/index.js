@@ -51,7 +51,7 @@ const Navigation =() => {
                     </div>
 
                     <div className='col-sm-10 navPart2 d-flex align-items-center'>
-                        <ul className='list-list-inline ms-auto'>
+                        <ul className='list-inline ms-auto'>
                             <li className='list-inline-item'><Link to="/"><Button>Home
                             </Button></Link></li>
                             <li className='list-inline-item'>

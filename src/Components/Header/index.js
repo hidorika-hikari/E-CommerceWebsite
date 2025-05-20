@@ -23,7 +23,6 @@ const Header =() => {
                 </div>
             </div>
         
-
         <header className="header">
             <div className="container">
                 <div className="row">

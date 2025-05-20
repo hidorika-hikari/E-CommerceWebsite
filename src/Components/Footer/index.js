@@ -44,7 +44,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col">
-                    <h5>BRAEKFAST & DAIRY</h5>
+                    <h5>BREAKFAST & DAIRY</h5>
                     <ul style={{ paddingLeft: 0 }}>
                         <li><Link to="#">Fresh Vegetable</Link></li>
                         <li><Link to="#">Herbs & Seasonings</Link></li>
