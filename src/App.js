@@ -15,7 +15,7 @@ const MyContext = createContext();
 function App() {
 
   const [countryList,setCountryList] = useState([]);
-  const [selectedCountry,setselectedCountry] = useState('');
+  const [selectedCountry,setSelectedCountry] = useState('');
   const [isOpenProductModel,setIsOpenProductModel] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function App() {
 
   const values = {
     countryList,
-    setselectedCountry,
+    setSelectedCountry,
     selectedCountry,
     isOpenProductModel,
     setIsOpenProductModel

@@ -42,9 +42,9 @@ const ProductModel = (props) => {
                         
                         <span className='badge bg-success'>IN STOCK</span>
 
-                        <p className='mt-2'>Vivamus adipiscing nisl ut dolor dignissim semper. 
-                            Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu 
-                            ad litora torquent</p>
+                        <p className='mt-2'>We live simply with grace and dignity.
+                            There is no stress in continuous improvement.
+                            A quiet partnership moves steadily toward the goal.</p>
                         <div className='d-flex align-items-center'>
                             <QuantityBox/>
                             <Button className='btn-blue btn-lg btn-big bth-round'> Add to Cart</Button>

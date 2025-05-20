@@ -2,7 +2,7 @@ import { TfiFullscreen } from "react-icons/tfi";
 import { CiHeart } from "react-icons/ci";
 import Rating from "@mui/material/Rating";
 import Button from '@mui/material/Button'
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { MyContext } from "../../App";
 
 const ProductItem = (props) => {
