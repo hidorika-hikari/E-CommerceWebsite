@@ -38,7 +38,7 @@ const Home =() => {
                         
 
                         <div className="col-md-9 productRow">
-                            <div className="d-flex align-content-center">
+                            <div className="d-flex align-items-center">
                                 <div className="info w-75">
                                     <h3 className="mb-0 hd">BEST SELLER</h3>
                                     <p className="text-light text-sml mb-0">Do not miss the current offers until the end of March.</p>
@@ -47,7 +47,7 @@ const Home =() => {
                                 <Button className="viewAllBtn ms-auto">View All<IoIosArrowRoundForward /></Button>
                             </div>
 
-                            <div className="product_row w-100 mt-4">
+                            <div className="product_row w-100 mt-2">
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={10}
@@ -81,7 +81,7 @@ const Home =() => {
                                 
                             </div>
 
-                            <div className="d-flex align-content-center mt-5">
+                            <div className="d-flex align-items-center mt-4">
                                 <div className="info w-75">
                                     <h3 className="mb-0 hd">NEW PRODUCTS</h3>
                                     <p className="text-light text-sml mb-0">New products with updated stocks.</p>

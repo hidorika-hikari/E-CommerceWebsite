@@ -544,7 +544,7 @@ nav .navPart2 ul li .submenu a button:hover{
 }
 
 .info .oldPrice{
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4);
   text-decoration: line-through;
@@ -555,7 +555,7 @@ nav .navPart2 ul li .submenu a button:hover{
 }
 
 .info .newPrice{
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: bold;
 }
 
@@ -618,6 +618,15 @@ nav .navPart2 ul li .submenu a button:hover{
 
 .productItem .imgWrapper:hover img{
   transform: scale(1.1);
+}
+
+.product_row{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.product_row .swiper{
+  padding-right: 80px !important;
 }
 
 .product_row .productItem{
@@ -1213,8 +1222,12 @@ button{
   padding: 45px 0px;
 }
 
-.productDetails .hd{
+.productDetails h2.hd{
   font-size: 26px;
+}
+
+.productDetails h3.hd{
+  font-size: 18px !important;
 }
 
 .productDetails .oldPrice{

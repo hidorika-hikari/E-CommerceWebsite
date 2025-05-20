@@ -7,6 +7,7 @@ import { BsCartFill } from "react-icons/bs";
 import { useState } from "react";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
+import RelatedProducts from "../../Pages/ProductDetails/RelatedProducts";
 
 const ProductDetails = () => {
 
@@ -23,17 +24,17 @@ const ProductDetails = () => {
             <section className="productDetails section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-5 ps-5">
+                        <div className="col-md-4 ps-5">
                             <ProductZoom/>
                         </div>
 
-                        <div className="col-md-7 ps-5">
+                        <div className="col-md-7 ps-5 pe-5">
                             <h2 className="hd text-capitalize">
                             All Natural Italian-Style Chicken Meatballs</h2>
                             <ul className="list list-inline d-flex align-items-center">
                                 <li className="list-inline-item">
                                     <div className="d-flex align-items-center">
-                                        <span className="text-light">Brands : </span>
+                                        <span className="text-light me-2">Brands : </span>
                                         <span>Welch's</span>
                                     </div>
                                 </li>
@@ -281,6 +282,12 @@ const ProductDetails = () => {
                             }
                         </div>
                     </div>
+
+                    <br/>
+
+                    <RelatedProducts title="RELATED PRODUCTS"/>
+
+                    <RelatedProducts title="RECENTLY VIEWED PRODUCTS"/>
                 </div>
             </section>
         </>
