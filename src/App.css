@@ -924,7 +924,6 @@ footer .copyright ul li a:hover svg{
   width: 100% !important;
 }
 
-
 .zoomSlider{
   padding-top: 30px;
 }
@@ -954,7 +953,7 @@ footer .copyright ul li a:hover svg{
 }
 
 .zoomSlider .slick-arrow.slick-next{
-  right: -2% !important; 
+  right: -2% !important;
 }
 
 .zoomSlider .slick-arrow.slick-prev{
@@ -983,11 +982,14 @@ footer .copyright ul li a:hover svg{
   text-transform: capitalize !important;
 }
 
+.btn-blue svg{
+  font-size: 22px;
+}
+
 .btn-big{
   font-size: 15px !important;
   min-width: auto !important;
   padding: 7px 30px !important;
-  border-radius: 30px !important;
 }
 
 .btn-round{
@@ -1367,4 +1369,103 @@ button{
 .reviewForm .form-group textarea.form-control{
   height: 200px;
   padding-top: 25px;
+}
+
+.reviewCard .info p{
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.cartPage .table thead{
+  background: red !important;
+  overflow: hidden;
+}
+
+.cartPage .table thead th{
+  border: 0px !important;
+}
+
+.cartPage .table thead th:first-child{
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.cartPage .table thead th:last-child{
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.cartItemImgWrapper .imgWrapper{
+  width: 280px;
+  overflow: hidden;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.cartItemImgWrapper .imgWrapper{
+  width: 100px;
+  overflow: hidden;
+}
+
+.cartItemImgWrapper .info a:hover{
+  text-decoration: none;
+}
+
+.cartItemImgWrapper .info h6{
+  color: #343434;
+  font-weight: bold;
+}
+
+.cartItemImgWrapper .info h6:hover{
+  color: #ed174a !important;
+}
+
+.remove{
+  cursor: pointer;
+}
+
+.remove svg{
+  font-size: 30px;
+}
+
+.remove:hover svg{
+  color: #ed174a !important;
+}
+
+.cartPage .quantityDrop button{
+  zoom: 75%;
+}
+
+.cartPage table th, .cartPage table td{
+  vertical-align: middle;
+}
+
+.cartPage .table td, .cartPage .table th{
+  border-top: 0px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.cartPage table tbody tr:hover{
+  background: #fafafa;
+}
+
+.cartDetails{
+  border-radius: 7px !important;
+}
+
+.cartDetails h4{
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-weight: 800 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text-red{
+  color: #ed174a !important;
+}
+
+.text-blue{
+  color: #53348c !important;
 }

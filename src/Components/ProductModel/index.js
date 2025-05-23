@@ -8,6 +8,7 @@ import { MdCompareArrows } from "react-icons/md";
 import QuantityBox from '../QuantityDrop';
 import { MyContext } from '../../App';
 import ProductZoom from '../ProductZoom';
+import { IoCartSharp } from 'react-icons/io5';
 
 const ProductModel = (props) => {
 
@@ -47,7 +48,8 @@ const ProductModel = (props) => {
                             A quiet partnership moves steadily toward the goal.</p>
                         <div className='d-flex align-items-center'>
                             <QuantityBox/>
-                            <Button className='btn-blue btn-lg btn-big bth-round'> Add to Cart</Button>
+                            <Button className='btn-blue btn-lg btn-big bth-round me-3'>
+                            <IoCartSharp/>Add to Cart</Button>
                         </div>
 
                         <div className='d-flex align-items-center mt-5 actions'>
