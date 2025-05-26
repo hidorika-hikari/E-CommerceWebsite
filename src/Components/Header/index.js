@@ -35,9 +35,13 @@ const Header =() => {
                         context.countryList.length!==0 && <CountryDropdown/>
                     }
                         <SearchBox/>
-                        <div className='part3 d-flex align-items-center'>
-                            <Button className='circle me-3'><FiUser/></Button>
-                            <div className='ms-auto cartTab d-flex align-items-center'>
+                        <div className='part3 d-flex align-items-center ms-auto'>
+                            {
+                                context.isLogin !== true ?
+                                <Link to="/signIn"><Button className='btn-blue btn-round ms-3'>Sign In</Button></Link> :
+                                <Button className='circle me-3'><FiUser/></Button>
+                            }
+                            <div className='ms-2 cartTab d-flex align-items-center'>
                                 <span className='price'>3.29$</span>
                                 <div className='position-relative ms-2'>
                                     <Button className='circle'><IoBagOutline/></Button>

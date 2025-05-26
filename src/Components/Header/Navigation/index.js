@@ -19,7 +19,7 @@ const Navigation =() => {
                                 <span className='text'>ALL CATEGORIES</span>
                                 <span className='icon2 ms-2'><FaAngleDown/></span>
                             </Button>
-                            <div className= {`sidebarNav ${isOpenSidebarVal === true ? 'open' : ''}`}>
+                            <div className= {`sidebarNav ${isOpenSidebarVal == true ? 'open' : ''}`}>
                                 <ul>
                                     <li><Link to="/"><Button>Men<FaAngleRight className='ms-auto'/></Button></Link>
                                         <div className='submenu shadow'>
