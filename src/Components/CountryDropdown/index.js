@@ -24,7 +24,7 @@ const CountryDropdown =() => {
     const selectCountry = (index, country) => {
         setSelectTab(index);
         setIsOpenModel(false);
-        context.setselectedCountry(country)
+        context.setSelectedCountry(country)
     }
 
     useEffect(()=>{
